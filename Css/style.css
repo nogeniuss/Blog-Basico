@@ -1,0 +1,186 @@
+/* Estilos globais para a página */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    width: 100%;
+    height: 100%;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.img {
+    max-width: 200px;
+    margin-right: 20px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.text-container {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin-bottom: 20px;
+}
+
+.text-container p {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.menu-esquerdo {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.menu-esquerdo ul {
+    list-style: none;
+    padding: 0;
+}
+
+.menu-esquerdo li {
+    margin-bottom: 10px;
+}
+
+.menu-esquerdo a {
+    text-decoration: none;
+    color: #333;
+}
+
+.menu-esquerdo a:hover {
+    text-decoration: underline;
+}
+
+/*Carrossel*/
+.slider{
+    margin: 0 auto;
+    width: 800px;
+    height: 400px;
+    overflow: hidden;
+
+}
+.slides{
+    width: 400%;
+    height: 400px;
+    display: flex;
+}
+.slides input {
+    display: none;
+}
+
+.slide{
+    width: 20%;
+    position: relative;
+
+}
+
+.slide img{
+    width: 900px;
+}
+
+.manual-navigation{
+
+    position: absolute;
+    width: 800px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn{
+    border: 2px solid #FFF;
+    padding: 5px;
+    border-radius: 16px;
+    cursor: pointer;
+    transition: 1s;
+
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+
+}
+
+.manual-btn:hover{
+    background-color: #FFF;
+}
+
+.div-pai{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#radio1:checked ~.first{
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+    margin-left: -19%;
+}
+
+#radio3:checked ~ .first{
+    margin-left: -37%;
+}
+
+#radio4:checked ~ .first{
+    margin-left: -60%;
+}
+
+.navigation-auto div {
+    border: 2px solid #000;
+    padding: 1px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+
+}
+
+.navigation-auto{
+    position: absolute;
+    width: 900px;
+    margin-top: 360px;
+    display: flex;
+    justify-content: center;
+}
+
+.navigation-auto div:not(:last-child){
+    margin-right: 40px;
+}
+
+#radio1-btn ~.navigation-auto .auto-btn1{
+    background-color: #FFF;
+}
+
+#radio2-btn ~.navigation-auto .auto-btn2{
+    background-color: #FFF;}
+
+#radio3-btn ~.navigation-auto .auto-btn3{
+    background-color: #FFF;}
+
+
+#radio4-btn ~.navigation-auto .auto-btn4{
+        background-color: #FFF;}
+
+
+
+
